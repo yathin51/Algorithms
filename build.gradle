@@ -13,6 +13,18 @@ buildscript {
   }
 }
 
+plugins {
+  id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "yathin51_Algorithms"
+    property "sonar.organization", "yathin51"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
+
 // Assume Java 8
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
